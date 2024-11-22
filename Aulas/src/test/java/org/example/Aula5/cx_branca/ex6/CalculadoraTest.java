@@ -6,6 +6,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculadoraTest {
 
+    /*
+    -------------------------------------------------------------------------
+    NO FIM ACABOU QUE NÃO TESTOU TODAS AS BRANCHES (FALTOU 9/12)
+    -------------------------------------------------------------------------
+    */
+
+
     //caminho 1, 3;
     @Test
     void testInicioDoIntervaloNegativo() {
