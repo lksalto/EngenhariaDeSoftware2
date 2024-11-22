@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculadoraTest {
 
-    //caminho 1, 3
+    //caminho 1, 3;
     @Test
     void testInicioDoIntervaloNegativo() {
         var c = new Calculadora();
@@ -15,6 +15,25 @@ class CalculadoraTest {
         assertEquals(-1, res);
     }
 
+    //caminho 1, 2, 4, 6, 7, 9, 10, 11, 8, 7, 9, 10, 11, 8, 7, 12;
+    @Test
+    void testVetor2NumerosValidos()
+    {
+        var c = new Calculadora();
+        int[] vetor = {4, 5};
+        var res = c.calcularMedia(vetor, 0, 10);
+        assertEquals(4.5, res, 0.000001);
+    }
+
+    //caminho 1, 2, 4, 5;
+    @Test
+    void testInicioDoIntervaloMaiorQueFim()
+    {
+        var c = new Calculadora();
+        int[] vetor = {4, 5, 7 ,9};
+        var res = c.calcularMedia(vetor, 4, 1);
+        assertEquals(-1, res);
+    }
 
 
 }
